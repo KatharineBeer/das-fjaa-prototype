@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  My apprenticeship
+{% endblock %}
+
+{% block content %}
+<a href="#" onclick="history.go(-1)" class="govuk-back-link">Back</a>
+
+<br>
+<br>
+
+<div class="govuk-width-container">
+
+
+            <div class="govuk-grid-row">
+               <div class="govuk-grid-column-two-thirds">
+
+                          <h1 class="govuk-heading-l">Confirm the details of your flexi-job agency apprenticeship</h1>
+                          <p>
+                            These are the details that your flexi-job apprenticeship agency and your training provider have agreed with you and have given to us.
+                            </p>
+
+                              <p><strong>It’s important to check these details</strong> because you’ll be assessed on the knowledge, skills and behaviours you will have learnt on your apprenticeship.
+                                  </p>
+
+                          <table class="govuk-table data-table">
+                               <tbody class="govuk-table__body">
+
+                                   <tr class="govuk-table__row">
+                                        <th scope="row" class="govuk-table__header">Delivery model</th>
+                                        <td class="govuk-table__cell">Flexi-job agency</td>
+                                   </tr>
+
+                                    <tr class="govuk-table__row">
+                                         <th scope="row" class="govuk-table__header">Apprenticeship</th>
+                                         <td class="govuk-table__cell">Electrical Installation NVQ Apprenticeship</td>
+                                    </tr>
+
+                                    <tr class="govuk-table__row">
+                                         <th scope="row" class="govuk-table__header">Level</th>
+                                         <td class="govuk-table__cell">Level 2 </td>
+                                    </tr>
+
+                                    <tr class="govuk-table__row">
+                                         <th scope="row" class="govuk-table__header">
+                                              <div>Planned training start date
+
+                                              </div>
+                                         </th>
+                                         <td class="govuk-table__cell"> May 2022</td>
+                                    </tr>
+
+                                    <tr class="govuk-table__row">
+                                         <th scope="row" class="govuk-table__header">
+                                              <div>Planned training end date
+                                              </div>
+                                         </th>
+                                         <td class="govuk-table__cell">December 2023</td>
+                                    </tr>
+
+                               </tbody>
+                          </table>
+
+
+
+                          <h3 class="govuk-heading-m" id="">Things you need to know about a flexi-job agency apprenticeship</h3>
+
+                          <p class="govuk-body">
+                               During your flexi-job agency apprenticeship, you may move between different host businesses found by your flexi-job apprenticeship agency. 
+                          </p>
+
+                          <p class="govuk-body">Your planned training start and estimated duration should:</p>
+                          <ul class="govuk-list govuk-list--bullet">
+                            <li>include the time you will spend in off-the-job training across all host businesses</li>
+                            <li>not include when your end point assessment will take place</li>
+                          </ul>
+  
+
+                        <div class="govuk-inset-text">
+                             The estimated duration of your apprenticeship may change during your apprenticeship after discussions with your flexi-job apprenticeship agency and your training provider.
+                        </div>
+
+
+
+                  </div>
+
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="govuk-grid-row">
+                       <div class="govuk-grid-column-two-thirds">
+
+
+
+                      <form id="app-details-form-hide" method="post" action="3b-dashboard">
+
+
+
+
+
+                       <div class="govuk-form-group">
+                           <fieldset class="govuk-fieldset">
+                             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                               <h3 class="govuk-fieldset__heading">
+                                 Are your apprenticeship details correct?
+                               </h3>
+                             </legend>
+
+
+                             <div class="govuk-radios govuk-radios--inline">
+                               <div class="govuk-radios__item">
+                                 <input class="govuk-radios__input" id="AppDetails" name="AppDetails" type="radio" value="yes">
+                                 <label class="govuk-label govuk-radios__label" for="AppDetails">
+                                   Yes
+                                 </label>
+                               </div>
+                               <div class="govuk-radios__item">
+                                 <input class="govuk-radios__input" id="AppDetails-2" name="AppDetails" type="radio" value="no">
+                                 <label class="govuk-label govuk-radios__label" for="AppDetails">
+                                   No
+                                 </label>
+                               </div>
+                             </div>
+
+                           </fieldset>
+                         </div>
+
+
+                      <button class="govuk-button" data-module="govuk-button" id="app-details-confirm">Confirm</button>
+                      </form>
+
+
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+{% endblock %}
+

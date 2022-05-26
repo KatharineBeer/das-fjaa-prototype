@@ -18,3 +18,34 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/landing-page";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.check-to-confirm, .employer-confirmed, .provider-confirmed, .ready-to-sign, .confirmed-panel {
+    border-left: 10px solid $govuk-link-colour;
+    background: govuk-colour("light-grey");
+    padding: 1em 3.5%;
+    margin: 1em 0 1.5em 0;
+    display: inline-block;
+    width: 92%;
+    &.govuk-form-group--error {
+         border-left: 10px solid govuk-colour("red");
+    }
+}
+
+.employer-confirmed, .provider-confirmed, .ready-to-sign, .confirmed-panel {
+    border-left: 10px solid govuk-colour("green");
+    .govuk-warning-text {
+         margin: 0;
+         .govuk-confirm__icon {
+              display: inline-block;
+              width: 35px;
+              height: 35px;
+              margin-top: -5px;
+              float: left;
+              background: url('../images/tick-green.svg') no-repeat 50% 50%;
+              background-size: contain;
+         }
+    }
+    .govuk-button {
+         margin: 0.5em 0 0.25em 0;
+    }
+}

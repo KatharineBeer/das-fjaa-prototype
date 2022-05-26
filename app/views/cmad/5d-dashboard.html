@@ -8,7 +8,6 @@
    
    {% block content %}
    <div class="govuk-width-container" id="landing-page-section">
-   
         <div class="govuk-grid-row">
              <div class="govuk-grid-column-full">
       
@@ -17,25 +16,18 @@
                </h1>
    
    
-               <p> 
-               Read through each section below to confirm your apprenticeship. 
-               If you ever need to check on the details of your apprenticeship, you can come back here.
-               </p>
-   
-   
-               <div class="govuk-warning-text">
-                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                    <strong class="govuk-warning-text__text">
-                    <span class="govuk-warning-text__assistive">Warning</span>
-                    You have 14 days to confirm your apprenticeship
-                    </strong>
+          <!-- READY TO CONFIRM -->
+          <div id="cs-agreed">
+               <div class="govuk-form-group ready-to-sign">
+                    <div class="govuk-warning-text">
+                         <span class="govuk-confirm__icon" aria-hidden="true"></span>
+                         <strong class="govuk-warning-text__text">
+                              <span class="govuk-warning-text__assistive">Confirmed</span> Your apprenticeship is now ready for to confirm
+                         </strong>
+                    </div>
+                    <a href="6-confirmation" class="govuk-button" data-module="govuk-button">Confirm my apprenticeship</a>
                </div>
-   
-   
-   
-               <p>
-               Your answers will save automatically, so you can leave and come back if you need to.
-               </p>
+          </div>
       
    
    
@@ -66,39 +58,39 @@
 
 
        <!-- ////// > Section Three ~ Apprenticeship Details < ////////////////////////////////////////////////////////////////////////////////////////// -->
-       <a href="3a-apprenticeship-details" class="section-item section-three govuk-link--no-visited-state">
+       <a href="#" class="section-item section-three govuk-link--no-visited-state complete">
             <span class="number">3</span>
             <div>
                  <div class="text-wrapper">
                       <h3 class="govuk-heading-m">Your apprenticeship details</h3>
                       <!-- <span class="govuk-caption-m">Lorem ipsum</span> -->
                  </div>
-                 <strong class="govuk-tag govuk-tag--yellow">incomplete</strong>
+                 <strong class="govuk-tag govuk-tag--green">complete</strong>
             </div>
        </a>
 
 
        <!-- ////// > Section Four ~ Details of Training < ////////////////////////////////////////////////////////////////////////////////////////// -->
-       <a href="#" class="section-item section-four govuk-link--no-visited-state">
+       <a href="#" class="section-item section-four govuk-link--no-visited-state complete">
             <span class="number">4</span>
             <div>
                  <div class="text-wrapper">
                       <h3 class="govuk-heading-m">How your apprenticeship will be delivered</h3>
                       <span class="govuk-caption-m"><!--<b class="complete-number">1</b> of 2 confirmed</span>-->
                  </div>
-                 <strong class="govuk-tag govuk-tag--yellow">incomplete</strong>
+                 <strong class="govuk-tag govuk-tag--green">complete</strong>
             </div>
        </a>
 
        <!-- ////// > Section Five ~ Roles and Responsibilities < ////////////////////////////////////////////////////////////////////////////////////////// -->
-       <a href="#" class="section-item section-five govuk-link--no-visited-state">
+       <a href="#" class="section-item section-five govuk-link--no-visited-state complete">
             <span class="number">5</span>
             <div>
                  <div class="text-wrapper">
                       <h3 class="govuk-heading-m">Roles and responsibilities</h3>
                       <!-- <span class="govuk-caption-m"><b class="complete-number">2</b> of 3 agreed</span> -->
                  </div>
-                 <strong class="govuk-tag govuk-tag--yellow">incomplete</strong>
+                 <strong class="govuk-tag govuk-tag--green">complete</strong>
             </div>
        </a>
 
