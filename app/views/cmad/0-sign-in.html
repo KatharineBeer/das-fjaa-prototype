@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+     GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<p>&nbsp;</p>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+     <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+               <h1 class="govuk-heading-l">Sign in to My apprenticeship</h1>
+
+               <form method="post" action="0-dashboard" class="check-answers-page">
+
+                    <div class="govuk-form-group">
+                         <label class="govuk-label" for="apprentice-email">Email address</label>
+                         <input class="govuk-input govuk-input--width-20" id="apprentice-email" name="apprentice-email" type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                         <label class="govuk-label" for="apprentice-password">Password</label>
+                         <div class="password-wrapper">
+                              <input class="govuk-input govuk-input--width-20" id="apprentice-password" name="apprentice-password" type="password">
+                              <label class="hide-show-password" for="hide-show-password">
+
+                              </label>
+                         </div>
+                    </div>
+
+
+                    {{ govukButton({
+                         text: "Sign in"
+                    }) }}
+
+               </form>
+
+               <p>
+                    You can <a href="#">change your password</a> if you've forgotten it.
+               </p>
+
+               <p>
+                    <a href="#">Create an account</a> if you do not have one.
+               </p>
+
+          </div>
+     </div>
+
+</div>
+{% endblock %}
