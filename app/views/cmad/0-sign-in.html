@@ -4,11 +4,8 @@
      GOV.UK Prototype Kit
 {% endblock %}
 
-{% block beforeContent %}
-<p>&nbsp;</p>
-{% endblock %}
-
 {% block content %}
+   
 <div class="govuk-width-container">
 
      <div class="govuk-grid-row">
@@ -33,9 +30,16 @@
                          </div>
                     </div>
 
+                    <div class="govuk-inset-text">
+                         By continuing you confirm you have:
+                         <ul class="govuk-list govuk-list--bullet">
+                              <li>read the service <a href="#">privacy statement</a></li>
+                         </ul>
+                    </div>
 
                     {{ govukButton({
-                         text: "Sign in"
+                         text: "Sign in",
+                         href: "0-start"
                     }) }}
 
                </form>
